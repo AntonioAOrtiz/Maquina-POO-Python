@@ -18,3 +18,7 @@ class Maquina(object):
 
     def getCantidadDeMaquinasFabricadas(self)->int:
         return Maquina.__cantidadDeMaquinasFabricadas
+
+    def __str__(self) -> str:
+        tmp_str=f"{{Marca: {self._marca}; modelo: {self._modelo}; NS: {self._numeroDeSerie} }}"
+        return tmp_str 
